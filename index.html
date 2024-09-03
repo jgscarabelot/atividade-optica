@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espelhos Periféricos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Espelhos Periféricos</h1>
+        <form id="espelhoForm">
+            <label for="foco">Foco (f):</label>
+            <input type="number" id="foco" name="foco" value="10" required>
+            <label for="distancia">Distância do Objeto ao Espelho (p):</label>
+            <input type="number" id="distancia" name="distancia" value="15" required>
+            <label for="altura">Altura do Objeto (y):</label>
+            <input type="number" id="altura" name="altura" value="5" required>
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
